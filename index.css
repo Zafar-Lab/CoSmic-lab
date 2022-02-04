@@ -30,13 +30,22 @@ body {
     border-radius: 50%
 }
 
-.card {
-    border-radius: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+.profile-main img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%
 }
 
+.card {
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+}
+.card-hover:hover {
+    transform: scale(1.05);
+  }
+  
 .card-body {
     position: relative;
     bottom: 35px

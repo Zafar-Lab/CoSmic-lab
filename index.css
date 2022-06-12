@@ -1,13 +1,53 @@
 body {
-    background: linear-gradient(90deg, #fcfcfc 0%, #decfff 100%)
+    background: white;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.navbar-brand {
+    padding-top: 0;
+}
+
+.nav-link {
+    padding-top: 0;
+    color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.headbgimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/background.jpg");
+}
+
+/* .bg {
+background-image: url("images/banner.png");
+height: 25%; 
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+} */
+.section {
+    box-sizing: content-box;
+    padding: 60px 40px;
+    padding: 60px Max(40px, calc((100% - 900px) / 2));
 }
 
 .container {
-    background-color: white;
+    background-color: #fafafa;
+    ;
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
-    margin-bottom: 50px; margin-bottom: 50px
+    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 
 .title {
@@ -30,7 +70,7 @@ body {
     border-radius: 50%
 }
 
-.profile-main img{
+.profile-main img {
     width: 200px;
     height: 200px;
     border-radius: 50%
@@ -42,10 +82,11 @@ body {
     margin-right: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
 }
+
 .card-hover:hover {
     transform: scale(1.05);
-  }
-  
+}
+
 .card-body {
     position: relative;
     bottom: 35px
@@ -74,3 +115,33 @@ body {
 /* .text-left{
     text-align: left;
 } */
+
+
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    gap: 40px;
+}
+
+.feature_image {
+    width: 360px;
+    max-width: 100%;
+    flex-shrink: 0;
+}
+
+.feature_text {
+    flex-grow: 1;
+}
+
+.feature_title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.feature_image img {
+    width: 100%;
+}
